@@ -1,0 +1,144 @@
+html{
+    height:100%;
+    background: radial-gradient(circle,#fff,#ccc);
+}
+
+#continer{
+    height:500px;
+    width:800px;
+    background-color: #9DD2EA;
+    margin:60px auto;
+    padding:10px;
+    border-radius:10px;
+    box-shadow: 0px 4px 0px 0px rgb(112, 128, 221);
+    position:relative;
+}
+#score{
+  background-color:rgb(180, 224, 92) ;
+  color: green;
+  padding: 15px;
+  position: absolute;
+  left:730px;
+  box-shadow:0px 4px 0px rgb(185, 34, 34);
+}
+#correct{
+    position:absolute;
+    background-color: purple;
+    padding: 11px;
+    color:white;
+    left:350px;
+    display:none;
+    border-radius:20px;
+}
+
+#wrong{
+    position:absolute;
+    background-color: rgb(255, 200, 17);
+    padding: 11px;
+    color:rgb(20, 1, 1);
+    left:350px;
+    border-radius:20px;
+    display:none;
+}
+#question{
+  width:670px;
+  height:200px;
+  background:white;
+  margin:60px auto 10px auto;
+  font-family: cursive;
+  font-size: 10em;
+  text-align: center;
+  line-height: 170px;
+  border-radius: 20px;
+  border:10px solid rgba(37, 75, 180, 0.829);
+  box-sizing: border-box;
+}
+#instruction{
+    height:60px;
+    width:670px;
+    background:rgb(80, 174, 211);
+    margin: 0px auto;
+    font-size: 2.5em;
+    padding: 5px;
+    font-family: cursive;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 40px;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    background: white;
+    margin-right: 90px;
+    float: left;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px rgba(255, 255, 255, 0.233);
+    font-size: 3em;
+    text-align: center;
+    line-height: 90px;
+    font-family: cursive;
+    position: relative;
+    transition: all 0.5s;
+}
+#box4{
+    margin-right: 0px;
+}
+#choices{
+    width: 670px;
+    height: 100px;
+    margin: 10px auto;
+}
+.box:hover , #startreset:hover{
+    background: darkorchid;
+    color: white;
+    box-shadow: 0px 4px 0px rgba(49, 37, 155, 0.349);
+}
+.box:active , #startreset:active{
+    top:4px;
+    box-shadow: 0px 0px ;
+}
+
+#startreset{
+    width:100px;
+    background: white;
+    border-radius:4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px rgba(7, 207, 191, 0.733);
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+    font-family: cursive;
+    position: relative;
+    transition: all 0.5s;
+}
+
+#timeremining{
+    width: 150px;
+    padding: 10px;
+    background: rgba(70, 228, 22, 0.603);
+    position: absolute;
+    top:465px;
+    left: 600px;
+    border-radius: 10px;
+    font-family: cursive;
+    text-align: center;
+    box-shadow:0px 4px 0px rgb(52, 155, 38);
+    display: none;
+}
+#gameover{
+  width: 800px;
+  height: 300px;
+  background: linear-gradient(#F7786B,rgb(209, 62, 46)); 
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: cursive;
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+  display: none;
+}
